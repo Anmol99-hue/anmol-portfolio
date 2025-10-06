@@ -1,0 +1,28 @@
+export const metadata = {
+  title: "GTA Traffic Risk Dashboard — Case Study",
+  description: "Simulated GTA data + Power BI mock to identify high-risk zones for AV testing.",
+};
+
+<p className="text-sm font-medium text-sky-600">Case Study</p>
+# GTA Traffic Risk Dashboard
+
+You’ll see how I simulate representative GTA data, model incident risk, and turn it into a dashboard for **autonomous vehicle testing**.
+
+## Context
+Solo build, 2025. Time-boxed MVP for portfolio. Goal: surface **actionable** hotspots, not just pretty charts.
+
+## Data
+- Simulated collisions, speeds, congestion, weather, road class.
+- Aggregated to grid tiles (H3 style) and corridors.
+
+## Approach
+- Feature engineering (hour-of-week, weather bins, speed deltas).
+- Baselines vs. simple ML (logit / XGBoost) for risk score.
+- Power BI mock for stakeholders; Next.js page for web.
+
+## Results & Impact
+- Example: *Top 10 tiles* show 20–35% higher predicted collisions vs city average.
+- Demo filters: day/night, weather, corridor.
+
+## Links
+- Repo / Notebook / Report — *(add when ready)*
